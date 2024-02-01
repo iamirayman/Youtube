@@ -1,0 +1,231 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.shorts-hero {
+  min-width: calc(100% - 74px);
+  height: calc(100vh - 56px);
+  margin-left: 74px;
+  margin-top: 56px;
+}
+
+.page {
+  height: calc(100vh - 56px);
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: relative;
+}
+
+.arrows {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.arrows a {
+  width: 56px;
+  height: 56px;
+  background-color: var(--SECOND-BGC);
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.video-short {
+  position: relative;
+}
+
+.realvid {
+  width: 315px;
+  height: 560px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.short-details {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 234px;
+}
+
+.shortchannelimg {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.shortchannelname {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.shortsubscribebutton {
+  background-color: white;
+  border: none;
+  outline: none;
+  width: 75px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shortsubscribebutton:hover {
+  filter: brightness(85%);
+}
+
+.shorttitle {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  font-size: 14px;
+}
+
+.start-buse {
+  width: 290px;
+  height: fit-content;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.start-buse div {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.start-buse path {
+  fill: white;
+}
+
+.short {
+  position: relative;
+}
+
+.functions-short {
+  width: 60px;
+  height: 423px;
+  position: absolute;
+  top: 80px;
+  right: -70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3px;
+}
+.functions-short div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.functions-short .icoo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 3px;
+  display: grid;
+  place-content: center;
+  background-color: var(--SECOND-BGC);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icoo:hover {
+  background-color: var(--SECOND-HOVER-C);
+}
+
+.functions-short span:nth-child(2) {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.page {
+  scroll-margin-top: 50px;
+}
+
+@media screen and (max-width: 560px) {
+  .page {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .functions-short {
+    top: 144px;
+    right: 4px;
+  }
+  .functions-short .icoo {
+    background-color: #ffffff16;
+  }
+  .video-short {
+    margin-top: 70px;
+  }
+  .arrows {
+    display: none;
+  }
+}
+
+/* tooltip section */
+
+/* .like{
+  position: relative;
+}
+
+.like::before {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  background-color: #4f4f4f;
+  width: fit-content;
+  height: 27px;
+  z-index: 9999;
+  padding: 0 6px;
+  border-radius: 5px;
+  animation: fadein 0.1s alternate;
+  white-space: nowrap;
+  font-size: 15px;
+  display: grid;
+  place-content: center;
+  font-weight: 200;
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+change some prop 
+
+.like:before {
+  content: "I Like This";
+} */
